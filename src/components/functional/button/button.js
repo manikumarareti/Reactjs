@@ -1,6 +1,12 @@
-const ButtonComponents = ()=>{
+const ButtonComponents = (props)=>{
+    const {ButtonText,bgColor}=props
     return(
-        <button>click button</button>
+        <button
+        style={{
+            backgroundColor:bgColor,
+            width:props.width,
+            height:props.height
+        }}>{ButtonText}</button>
     )
 }
 
